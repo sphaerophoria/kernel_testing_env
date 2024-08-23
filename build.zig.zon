@@ -1,0 +1,13 @@
+.{
+    .name = "kernel_test",
+    .version = "0.0.1",
+    .minimum_zig_version = "0.13.0",
+    .dependencies = .{ .linux = .{
+            .url = "https://github.com/torvalds/linux/archive/refs/tags/v6.10.tar.gz",
+            .hash = "12203c0b8a4560040605f236771663bdd7060267cbdc8f4d1558960a216a36151937",
+        }, },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+    },
+}
